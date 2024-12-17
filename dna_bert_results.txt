@@ -1,0 +1,240 @@
+Using device: cuda
+Initializing Datasets...
+Splitting into training and validation sets...
+Computing class weights for training subset...
+Class weights: [0.76862683 1.43065909]
+Creating WeightedRandomSampler...
+Creating DataLoaders...
+
+DataLoaders created successfully.
+Training samples: 2870400
+Validation samples: 717600
+Test samples: 1000
+
+Initializing the model...
+ResidualFCNN(
+  (fc1): Linear(in_features=3072, out_features=1024, bias=True)
+  (bn1): BatchNorm1d(1024, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu1): ReLU()
+  (dropout1): Dropout(p=0.5, inplace=False)
+  (fc2): Linear(in_features=1024, out_features=512, bias=True)
+  (bn2): BatchNorm1d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu2): ReLU()
+  (dropout2): Dropout(p=0.5, inplace=False)
+  (fc3): Linear(in_features=512, out_features=256, bias=True)
+  (bn3): BatchNorm1d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (relu3): ReLU()
+  (dropout3): Dropout(p=0.5, inplace=False)
+  (fc_out): Linear(in_features=256, out_features=2, bias=True)
+  (residual1): Linear(in_features=3072, out_features=512, bias=True)
+  (residual2): Linear(in_features=512, out_features=256, bias=True)
+)
+
+Starting training...
+Epoch [1/50] Training Loss: 0.5316, Accuracy: 0.7254
+Epoch [1/50] Validation Loss: 0.5072, Accuracy: 0.7430
+Current Learning Rate: 0.0001
+Initial validation loss set to 0.5072
+Epoch [2/50] Training Loss: 0.5112, Accuracy: 0.7394
+Epoch [2/50] Validation Loss: 0.5056, Accuracy: 0.7422
+Current Learning Rate: 0.0001
+Validation loss improved to 0.5056. Resetting counter.
+Epoch [3/50] Training Loss: 0.5038, Accuracy: 0.7447
+Epoch [3/50] Validation Loss: 0.4915, Accuracy: 0.7524
+Current Learning Rate: 0.0001
+Validation loss improved to 0.4915. Resetting counter.
+Epoch [4/50] Training Loss: 0.4983, Accuracy: 0.7481
+Epoch [4/50] Validation Loss: 0.4925, Accuracy: 0.7511
+Current Learning Rate: 0.0001
+EarlyStopping counter: 1 out of 7
+Epoch [5/50] Training Loss: 0.4941, Accuracy: 0.7513
+Epoch [5/50] Validation Loss: 0.4904, Accuracy: 0.7511
+Current Learning Rate: 0.0001
+Validation loss improved to 0.4904. Resetting counter.
+Epoch [6/50] Training Loss: 0.4905, Accuracy: 0.7537
+Epoch [6/50] Validation Loss: 0.4785, Accuracy: 0.7613
+Current Learning Rate: 0.0001
+Validation loss improved to 0.4785. Resetting counter.
+Epoch [7/50] Training Loss: 0.4874, Accuracy: 0.7558
+Epoch [7/50] Validation Loss: 0.4843, Accuracy: 0.7555
+Current Learning Rate: 0.0001
+EarlyStopping counter: 1 out of 7
+Epoch [8/50] Training Loss: 0.4849, Accuracy: 0.7573
+Epoch [8/50] Validation Loss: 0.4891, Accuracy: 0.7526
+Current Learning Rate: 0.0001
+EarlyStopping counter: 2 out of 7
+Epoch [9/50] Training Loss: 0.4815, Accuracy: 0.7597
+Epoch [9/50] Validation Loss: 0.4726, Accuracy: 0.7643
+Current Learning Rate: 0.0001
+Validation loss improved to 0.4726. Resetting counter.
+Epoch [10/50] Training Loss: 0.4798, Accuracy: 0.7608
+Epoch [10/50] Validation Loss: 0.4693, Accuracy: 0.7670
+Current Learning Rate: 0.0001
+Validation loss improved to 0.4693. Resetting counter.
+Epoch [11/50] Training Loss: 0.4771, Accuracy: 0.7624
+Epoch [11/50] Validation Loss: 0.4678, Accuracy: 0.7681
+Current Learning Rate: 0.0001
+Validation loss improved to 0.4678. Resetting counter.
+Epoch [12/50] Training Loss: 0.4753, Accuracy: 0.7638
+Epoch [12/50] Validation Loss: 0.4858, Accuracy: 0.7547
+Current Learning Rate: 0.0001
+EarlyStopping counter: 1 out of 7
+Epoch [13/50] Training Loss: 0.4729, Accuracy: 0.7654
+Epoch [13/50] Validation Loss: 0.4743, Accuracy: 0.7621
+Current Learning Rate: 0.0001
+EarlyStopping counter: 2 out of 7
+Epoch [14/50] Training Loss: 0.4709, Accuracy: 0.7668
+Epoch [14/50] Validation Loss: 0.4639, Accuracy: 0.7700
+Current Learning Rate: 0.0001
+Validation loss improved to 0.4639. Resetting counter.
+Epoch [15/50] Training Loss: 0.4693, Accuracy: 0.7678
+Epoch [15/50] Validation Loss: 0.4690, Accuracy: 0.7657
+Current Learning Rate: 0.0001
+EarlyStopping counter: 1 out of 7
+Epoch [16/50] Training Loss: 0.4682, Accuracy: 0.7688
+Epoch [16/50] Validation Loss: 0.4685, Accuracy: 0.7668
+Current Learning Rate: 0.0001
+EarlyStopping counter: 2 out of 7
+Epoch [17/50] Training Loss: 0.4660, Accuracy: 0.7702
+Epoch [17/50] Validation Loss: 0.4746, Accuracy: 0.7624
+Current Learning Rate: 0.0001
+EarlyStopping counter: 3 out of 7
+Epoch [18/50] Training Loss: 0.4646, Accuracy: 0.7711
+Epoch [18/50] Validation Loss: 0.4670, Accuracy: 0.7673
+Current Learning Rate: 5e-05
+EarlyStopping counter: 4 out of 7
+Epoch [19/50] Training Loss: 0.4584, Accuracy: 0.7752
+Epoch [19/50] Validation Loss: 0.4683, Accuracy: 0.7655
+Current Learning Rate: 5e-05
+EarlyStopping counter: 5 out of 7
+Epoch [20/50] Training Loss: 0.4555, Accuracy: 0.7769
+Epoch [20/50] Validation Loss: 0.4600, Accuracy: 0.7714
+Current Learning Rate: 5e-05
+Validation loss improved to 0.4600. Resetting counter.
+Epoch [21/50] Training Loss: 0.4545, Accuracy: 0.7777
+Epoch [21/50] Validation Loss: 0.4702, Accuracy: 0.7644
+Current Learning Rate: 5e-05
+EarlyStopping counter: 1 out of 7
+Epoch [22/50] Training Loss: 0.4524, Accuracy: 0.7789
+Epoch [22/50] Validation Loss: 0.4579, Accuracy: 0.7738
+Current Learning Rate: 5e-05
+Validation loss improved to 0.4579. Resetting counter.
+Epoch [23/50] Training Loss: 0.4514, Accuracy: 0.7796
+Epoch [23/50] Validation Loss: 0.4614, Accuracy: 0.7709
+Current Learning Rate: 5e-05
+EarlyStopping counter: 1 out of 7
+Epoch [24/50] Training Loss: 0.4505, Accuracy: 0.7802
+Epoch [24/50] Validation Loss: 0.4633, Accuracy: 0.7690
+Current Learning Rate: 5e-05
+EarlyStopping counter: 2 out of 7
+Epoch [25/50] Training Loss: 0.4495, Accuracy: 0.7811
+Epoch [25/50] Validation Loss: 0.4656, Accuracy: 0.7680
+Current Learning Rate: 5e-05
+EarlyStopping counter: 3 out of 7
+Epoch [26/50] Training Loss: 0.4480, Accuracy: 0.7817
+Epoch [26/50] Validation Loss: 0.4601, Accuracy: 0.7725
+Current Learning Rate: 2.5e-05
+EarlyStopping counter: 4 out of 7
+Epoch [27/50] Training Loss: 0.4443, Accuracy: 0.7842
+Epoch [27/50] Validation Loss: 0.4585, Accuracy: 0.7723
+Current Learning Rate: 2.5e-05
+EarlyStopping counter: 5 out of 7
+Epoch [28/50] Training Loss: 0.4428, Accuracy: 0.7848
+Epoch [28/50] Validation Loss: 0.4687, Accuracy: 0.7654
+Current Learning Rate: 2.5e-05
+EarlyStopping counter: 6 out of 7
+Epoch [29/50] Training Loss: 0.4425, Accuracy: 0.7854
+Epoch [29/50] Validation Loss: 0.4577, Accuracy: 0.7729
+Current Learning Rate: 2.5e-05
+Validation loss improved to 0.4577. Resetting counter.
+Epoch [30/50] Training Loss: 0.4413, Accuracy: 0.7861
+Epoch [30/50] Validation Loss: 0.4576, Accuracy: 0.7736
+Current Learning Rate: 2.5e-05
+Validation loss improved to 0.4576. Resetting counter.
+Epoch [31/50] Training Loss: 0.4403, Accuracy: 0.7866
+Epoch [31/50] Validation Loss: 0.4578, Accuracy: 0.7732
+Current Learning Rate: 2.5e-05
+EarlyStopping counter: 1 out of 7
+Epoch [32/50] Training Loss: 0.4395, Accuracy: 0.7871
+Epoch [32/50] Validation Loss: 0.4550, Accuracy: 0.7745
+Current Learning Rate: 2.5e-05
+Validation loss improved to 0.4550. Resetting counter.
+Epoch [33/50] Training Loss: 0.4388, Accuracy: 0.7875
+Epoch [33/50] Validation Loss: 0.4522, Accuracy: 0.7768
+Current Learning Rate: 2.5e-05
+Validation loss improved to 0.4522. Resetting counter.
+Epoch [34/50] Training Loss: 0.4380, Accuracy: 0.7881
+Epoch [34/50] Validation Loss: 0.4559, Accuracy: 0.7743
+Current Learning Rate: 2.5e-05
+EarlyStopping counter: 1 out of 7
+Epoch [35/50] Training Loss: 0.4369, Accuracy: 0.7886
+Epoch [35/50] Validation Loss: 0.4579, Accuracy: 0.7727
+Current Learning Rate: 2.5e-05
+EarlyStopping counter: 2 out of 7
+Epoch [36/50] Training Loss: 0.4368, Accuracy: 0.7888
+Epoch [36/50] Validation Loss: 0.4543, Accuracy: 0.7752
+Current Learning Rate: 2.5e-05
+EarlyStopping counter: 3 out of 7
+Epoch [37/50] Training Loss: 0.4357, Accuracy: 0.7896
+Epoch [37/50] Validation Loss: 0.4522, Accuracy: 0.7769
+Current Learning Rate: 2.5e-05
+Validation loss improved to 0.4522. Resetting counter.
+Epoch [38/50] Training Loss: 0.4349, Accuracy: 0.7901
+Epoch [38/50] Validation Loss: 0.4575, Accuracy: 0.7734
+Current Learning Rate: 2.5e-05
+EarlyStopping counter: 1 out of 7
+Epoch [39/50] Training Loss: 0.4348, Accuracy: 0.7901
+Epoch [39/50] Validation Loss: 0.4511, Accuracy: 0.7774
+Current Learning Rate: 2.5e-05
+Validation loss improved to 0.4511. Resetting counter.
+Epoch [40/50] Training Loss: 0.4346, Accuracy: 0.7901
+Epoch [40/50] Validation Loss: 0.4540, Accuracy: 0.7749
+Current Learning Rate: 2.5e-05
+EarlyStopping counter: 1 out of 7
+Epoch [41/50] Training Loss: 0.4342, Accuracy: 0.7904
+Epoch [41/50] Validation Loss: 0.4609, Accuracy: 0.7703
+Current Learning Rate: 2.5e-05
+EarlyStopping counter: 2 out of 7
+Epoch [42/50] Training Loss: 0.4334, Accuracy: 0.7912
+Epoch [42/50] Validation Loss: 0.4522, Accuracy: 0.7772
+Current Learning Rate: 2.5e-05
+EarlyStopping counter: 3 out of 7
+Epoch [43/50] Training Loss: 0.4324, Accuracy: 0.7918
+Epoch [43/50] Validation Loss: 0.4606, Accuracy: 0.7711
+Current Learning Rate: 1.25e-05
+EarlyStopping counter: 4 out of 7
+Epoch [44/50] Training Loss: 0.4305, Accuracy: 0.7929
+Epoch [44/50] Validation Loss: 0.4565, Accuracy: 0.7735
+Current Learning Rate: 1.25e-05
+EarlyStopping counter: 5 out of 7
+Epoch [45/50] Training Loss: 0.4299, Accuracy: 0.7931
+Epoch [45/50] Validation Loss: 0.4545, Accuracy: 0.7751
+Current Learning Rate: 1.25e-05
+EarlyStopping counter: 6 out of 7
+Epoch [46/50] Training Loss: 0.4288, Accuracy: 0.7937
+Epoch [46/50] Validation Loss: 0.4555, Accuracy: 0.7743
+Current Learning Rate: 1.25e-05
+EarlyStopping counter: 7 out of 7
+Early stopping triggered.
+
+Finding the best threshold based on validation F1 score...
+Best Threshold: 0.50
+
+Evaluating the model on the Test Set...
+
+Test Set Evaluation Metrics:
+Accuracy: 0.7750
+Precision: 0.6542
+Recall: 0.7536
+F1 Score: 0.7004
+ROC-AUC: 0.8500
+PR-AUC: 0.7737
+Confusion Matrix:
+[[512 139]
+ [ 86 263]]
+
+Model saved to residual_fcnn_final.pth
+
+Training and evaluation complete. Models have been saved.
+
+
